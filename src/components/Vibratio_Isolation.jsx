@@ -9,7 +9,6 @@ import { jsPDF } from 'jspdf';
 import autoTable from 'jspdf-autotable';
 import './Dashboard.css';
 import sphereNextLogo from '../assets/Logo1.png';
-import html2canvas from 'html2canvas';
 
 const SHEET_URL =
   "https://docs.google.com/spreadsheets/d/12phtu243TTlKb5DGO3gztxmWZfp_9qjTzxJ5qYRCqEA/export?format=csv&gid=0";
