@@ -85,7 +85,6 @@
     const lv   = latestEntry?.Vibration ?? 0;
     const lt   = latestEntry?.Temp      ?? 0;
     const lr   = latestEntry?.RPM       ?? 0;
-    const lc   = latestEntry?.Current   ?? 0;
 
     // Critical anomalies
     if (vib.severity === 'critical')
@@ -227,7 +226,7 @@
         }
         setLoading(false);
         setLastUpdated(new Date());
-      } catch (err) {
+      } catch {
         setError("Failed to fetch data. Please try again later.");
         setLoading(false);
       }
